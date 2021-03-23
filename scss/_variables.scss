@@ -1,0 +1,54 @@
+// Fonts
+$lato: "Lato", sans-serif;
+
+// Colors
+$dark-blue: #102746;
+
+// Mixins
+@mixin primaryBtn {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 39px;
+  background-color: #1b7dff;
+  outline: none;
+  border: none;
+}
+
+@mixin secondaryBtn {
+  line-height: 24px;
+  color: #006dfe;
+  text-transform: uppercase;
+
+  img {
+    margin-left: 26px;
+  }
+
+  &:hover img {
+    animation: arrow 0.4s;
+  }
+}
+
+@mixin titleUnderline {
+  content: "";
+  width: 253px;
+  height: 3px;
+  background-color: #006dfe;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
